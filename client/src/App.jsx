@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Toaster } from 'react-hot-toast';
+import { Compass } from 'lucide-react';
 import AuthPage from './pages/AuthPage';
 import HeroClassSelection from './pages/HeroClassSelection';
 import Dashboard from './pages/Dashboard';
@@ -87,7 +88,9 @@ function App() {
     return (
       <div className="min-h-screen bg-slate-950 flex items-center justify-center text-slate-200">
         <div className="text-center">
-          <div className="text-5xl mb-4">✨</div>
+          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl border border-cyan-400/40 bg-cyan-500/10 shadow-lg shadow-cyan-500/10">
+            <Compass className="h-9 w-9 text-cyan-300 animate-pulse" strokeWidth={2.2} />
+          </div>
           <p className="text-lg font-semibold">Loading your quest log...</p>
         </div>
       </div>

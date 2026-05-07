@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import toast from 'react-hot-toast';
-import { LogIn, UserPlus, Mail, Lock, User } from 'lucide-react';
+import { Compass, LogIn, UserPlus, Mail, Lock, User } from 'lucide-react';
 import { apiRequest } from '../lib/api';
 
 const AuthPage = ({ onAuthSuccess }) => {
@@ -52,7 +52,9 @@ const AuthPage = ({ onAuthSuccess }) => {
         className="w-full max-w-md bg-slate-900/80 border border-cyan-500/30 rounded-2xl p-6 shadow-2xl backdrop-blur-xl"
       >
         <div className="text-center mb-8">
-          <div className="text-5xl mb-3">🧭</div>
+          <div className="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-2xl border border-cyan-400/40 bg-cyan-500/10 shadow-lg shadow-cyan-500/10">
+            <Compass className="h-9 w-9 text-cyan-300" strokeWidth={2.2} />
+          </div>
           <h1 className="text-3xl font-black text-white">QuestHabit</h1>
           <p className="text-cyan-200 text-sm mt-2">Build habits, earn XP, and keep your progress saved.</p>
         </div>
